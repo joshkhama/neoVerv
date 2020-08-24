@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
+
 /* CSS Variables */
 :root {
   --primary-color: #20c58e;
@@ -27,6 +29,9 @@ a {
 }
 
 /* Section */
+.front-page {
+  margin: 4rem;
+}
 .section {
   padding: 2rem 0;
 }
@@ -51,6 +56,15 @@ section#entertainment {
   grid-gap: 20px;
   grid-template-columns: repeat(2, 1fr);
   text-align: left;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+.front-img {
+  width: 65vw;
 }
 
 /* Showcase */
@@ -105,10 +119,10 @@ footer .footer-bottom {
 
 /* Utility Classes */
 .container {
-  max-width: 1180px;
+  max-width: 90vw;
   text-align: center;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
 }
 
 .lead {
@@ -123,6 +137,10 @@ footer .footer-bottom {
   background-color: aqua;
 }
 
+.float-right {
+  float: right;
+}
+
 .text-center {
   text-align: center;
 }
@@ -132,14 +150,20 @@ footer .footer-bottom {
   padding: 1rem;
   color: #fff;
   display: inline-block;
+  width: 10rem;
 }
 
 .btn-primary {
   background: var(--primary-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .btn-primary:hover {
-  background: var(--primary-color-hover);
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid;
 }
 
 .btn-secondary {
@@ -148,6 +172,15 @@ footer .footer-bottom {
 
 .btn-secondary:hover {
   background: var(--secondary-color-hover);
+}
+
+/* Links */
+.link-primary {
+  color: var(--primary-color);
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 /* Text colors */
@@ -178,34 +211,54 @@ footer .footer-bottom {
 
 /* Navigation */
 nav {
-  height: 40px;
+  height: 12vh;
   width: 100%;
-  background-color: #333;
-  color: #eee;
+  background-color: rgb(255, 255, 255, 0.2);
   position: fixed;
 }
 nav ul {
-  padding: 0;
+  padding: 0 1.5rem;
   margin: 0;
+  vertical-align: middle;
 }
 nav li {
   display: inline;
   float: left;
+  margin: 10px auto;
+  padding: 20px;
 }
 nav a {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
   display: inline-block;
   width: 100px;
   text-align: center;
   text-decoration: none;
   padding: 10px 0;
-  color: #eee;
+  color: #000000;
   text-decoration: none;
 }
-nav li:hover {
-  background-color: #444;
+nav a:hover {
+  color: var(--primary-color);
 }
 nav a#openup {
   display: none;
+}
+nav::-webkit-scrollbar {
+  background: white;
+}
+
+.a-img {
+  height: 2vh;
+  width: 80%;
+}
+.logo-img {
+  height: 2.5vh;
+  width: auto;
+}
+.hide-on-small {
+  width: 200px;
 }
 
 @media screen and (max-width: 580px) {
