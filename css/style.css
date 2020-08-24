@@ -8,7 +8,7 @@
   --primary-color-hover: #98c4b5;
   --secondary-color: #103063;
   --secondary-color-hover: #143f85;
-  --light-color: #f4f4f4;
+  --light-color: rgb(244, 244, 244);
 }
 
 body {
@@ -156,9 +156,6 @@ p {
   width: auto;
   height: 1%;
 }
-.leverage {
-  background-color: aqua;
-}
 
 .float-right {
   float: right;
@@ -166,6 +163,19 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+/* Cards */
+.card {
+  max-width: 90vw;
+  text-align: left;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem;
+  background: white;
+}
+.card div img {
+  height: auto;
+  width: 25%;
 }
 
 /* Buttons */
@@ -240,7 +250,7 @@ p {
 nav {
   height: 12vh;
   width: 100%;
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: rgb(244, 244, 244, 0.8);
   position: fixed;
 }
 nav ul {
@@ -289,24 +299,42 @@ nav::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 580px) {
+  .logo-img {
+    height: auto;
+    width: 20px;
+  }
+  nav li {
+    display: inline;
+    margin: 1px auto;
+    padding: 0px;
+  }
+  #openup-img {
+    width: auto;
+    height: 1rem;
+  }
   .hide-on-small {
     display: none;
   }
 
-  #showcase {
-    height: 50vh;
+  .front-page {
+    margin: 1rem;
   }
-
+  .front-img {
+    width: 100%;
+  }
   #showcase .container {
     margin-top: 15vh;
   }
 
   #showcase h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   #showcase h2 {
     font-size: 1.5rem;
+  }
+  #showcase p {
+    font-size: 1rem;
   }
 
   nav {
