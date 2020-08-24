@@ -124,6 +124,29 @@ footer .footer-bottom {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+.partners {
+  max-width: 90vw;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  padding-bottom: 200px;
+}
+
+.partners div,
+p {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.partners div img {
+  margin: 1.8rem;
+}
+#partners-text {
+  margin-left: 2rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
 
 .lead {
   font-size: 1.3rem;
@@ -198,6 +221,10 @@ footer .footer-bottom {
 
 .bg-light {
   background: var(--light-color);
+  color: #333;
+}
+.bg-grey {
+  background: rgb(240, 240, 240);
   color: #333;
 }
 
